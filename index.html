@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HAPPY BIRTHDAY</title>
+	<link rel="shortcut icon" href="fotos/icono.png" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<header class="cubo">
+
+		<img class="globoani"  id="globo" src="fotos/globo.png">
+		<img class="globoani" id="globo2" src="fotos/globo.png">
+
+		<div class="container">
+
+			<div id="globos"></div>
+
+			<div class="lado" id="lado_a"> </div>
+			<div class="lado" id="lado_b"> </div>
+			<div class="lado" id="lado_c"> </div>
+			<div class="lado" id="lado_d"> </div>
+			<div class="lado_2" id="lado_e"> </div>
+			<div class="lado_2" id="lado_f"> </div>
+			
+		</div>
+	</header>
+
+	<main class="opciones">
+		<div>
+			<h1 class="opcion_uno">&#127881;FELIZ CUMPLEAÑOS&#127881;</h1>
+		</div>
+
+		<div class="parrafo"> 
+			<p> Por fortuna tengo este día anotado en mi calendario, y es que eres tan especial que no lo podía dejar pasar. &#129395;¡Feliz cumpleaños!&#129395; Te mereces mucho más que una simple frase de cumpleaños, y es por eso que aquí te mando este pequeño detalle.</p> 
+
+			<br>Desde hace algún tiempo me di cuenta que este es un muy buen regalo, y muchas veces es más valorizado que un obsequio material. Espero sepas que te valoro mucho y que mientras más tiempo pasa, más lo hago.</br>
+
+			&#129395;¡Te deseo un hermoso cumpleaños!&#129395; &#10024;¡Y un futuro prometedor!&#10024;</p>
+		</div>
+
+	</main>
+
+
+	<footer> 
+		<div class="contenedor"> 
+
+			<div class="tarjeta" id="kathi"><h3>&#128081;FELICES 21&#128081;</h3></div>
+			<div class="tarjeta" id="kathi1"><h3>&#128081;FELICES 21&#128081;</h3></div>
+			<div class="tarjeta" id="kathi2"><h3>&#128081;FELICES 21&#128081;</h3></div>
+			<div class="tarjeta" id="kathi3"><h3>&#128081;FELICES 21&#128081;</h3></div>
+			<div class="tarjeta" id="kathi4"><h3>&#128081;FELICES 21&#128081;</h3></div>
+			<div class="tarjeta" id="kathi5"><h3>&#128081;FELICES 21&#128081;</h3></div>
+			<div class="tarjeta" id="kathi6"><h3>&#128081;FELICES 21&#128081;</h3></div>
+			<div class="tarjeta" id="kathi7"><h3>&#128081;FELICES 21&#128081;</h3></div>
+
+		</div>
+
+    	<audio loop id="audioelement">
+   	 		<source src="audio.mp3" type="audio/mp3">
+   		 	
+		</audio>
+
+		<a href="sonido2.html"></a>
+	<script>
+		const playSound = function() {
+		    document.getElementById('audioelement').play();
+		    document.removeEventListener('click', playSound);
+		}
+		document.addEventListener('click', playSound);
+	</script>
+
+
+	</footer>
+
+</body>
+
+
+
+</html>

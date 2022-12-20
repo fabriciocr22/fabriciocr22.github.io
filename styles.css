@@ -1,0 +1,356 @@
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	perspective: 1000px;
+	
+}
+
+.lado{
+	height: 300px;
+	width: 300px;
+	animation: girar 4s linear infinite;
+	position: absolute;
+	opacity: 0.9;
+	cursor: pointer;
+	background-color: red;
+}
+
+#globo{
+	height: 301px;
+	position: absolute;
+	width: 202px;
+	top: 115px;
+	left: 64px;
+}
+
+#globo2{
+	height: 301px;
+	position: absolute;
+	width: 202px;
+	top: 115px;
+	right: 64px;
+}
+
+
+@keyframes girar{
+	from{
+		transform: rotateY(360deg) translateZ(150px);
+		z-index: 10;
+	}
+
+	50%{
+		z-index: -10;
+	}
+
+to{
+	transform: rotateY(0deg) translateZ(150px);
+	z-index: 10;
+}
+}
+
+
+#lado_d{
+	background-image: url(fotos/1.jpg);
+	background-size: contain;
+	background-position: center;
+}
+
+#lado_d:hover{
+	box-shadow: 0px 0px 45px 0px rgba(245,0,0,0.75);
+	-webkit-box-shadow: 0px 0px 45px 0px rgba(245,0,0,0.75);
+	-moz-box-shadow: 0px 0px 45px 0px rgba(245,0,0,0.75);
+}
+
+#lado_c{
+	background-image: url(fotos/2.jpg);
+	background-size: contain;
+	background-position: center;
+	animation-delay: -1s;
+}
+
+#lado_c:hover{
+	box-shadow: 0px 0px 45px 0px rgba(245,0,0,0.75);
+	-webkit-box-shadow: 0px 0px 45px 0px rgba(245,0,0,0.75);
+	-moz-box-shadow: 0px 0px 45px 0px rgba(245,0,0,0.75);
+}
+
+#lado_b{
+	background-image: url(fotos/3.jpg);
+	background-size: contain;
+	background-position: center;
+	animation-delay: -2s;
+}
+
+#lado_b:hover{
+	box-shadow: 0px 0px 45px 0px rgba(245,0,0,0.75);
+	-webkit-box-shadow: 0px 0px 45px 0px rgba(245,0,0,0.75);
+	-moz-box-shadow: 0px 0px 45px 0px rgba(245,0,0,0.75);
+}
+
+#lado_a{
+	background-image: url(fotos/4.jpg);
+	background-size: contain;
+	background-position: center;
+	animation-delay: -3s;
+}
+
+#lado_a:hover{
+	box-shadow: 0px 0px 45px 0px rgba(245,0,0,0.75);
+	-webkit-box-shadow: 0px 0px 45px 0px rgba(245,0,0,0.75);
+	-moz-box-shadow: 0px 0px 45px 0px rgba(245,0,0,0.75);
+}
+
+/* top and bottom */
+
+.lado_2{
+	height: 300px;
+	width: 300px;
+	animation: girar_2 4s linear infinite;
+	position: absolute;
+}
+
+@keyframes girar_2{
+	from{
+		transform: rotateY(360deg) rotateX(90deg);
+	}
+
+	to{
+		transform: rotateY(0deg) rotateX(90deg);
+
+	}
+}
+
+#lado_e{
+	background-color: black;
+	margin-bottom: 300px;
+
+}
+
+#lado_f{
+	background-color: black;
+	margin-top: 300px;
+}
+
+.cubo{
+	background: linear-gradient(#000000, #000001);
+}
+
+/*MAIN*/
+
+.opciones{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 50px;
+	text-transform: uppercase;
+	font-family: "oswald";
+}
+
+
+.opciones{
+	background: linear-gradient(#000000, #888888);
+}
+
+.opciones h1{
+	margin: 20px;
+}
+
+.opcion_uno {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  font: normal 80px/normal "Rubik Gemstones";
+  color: rgba(138,137,187);
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #15df1b , 0 0 70px #1cc11a , 0 0 80px #3ac700 , 0 0 100px #f59e00 ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.opcion_uno:hover {
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+}
+
+.parrafo{
+	width: 70%;
+	font-size: 35px;
+	text-align: justify;
+	color: #77FC1B;
+	font-family: 'Rubik Gemstones', cursive;
+	 text-shadow: 4px 4px 8px #00FF40 ;
+}
+
+footer{
+	height: 550px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(#888888, #F2F3F4 );
+}
+
+.contenedor{
+	perspective: 125px;
+	width: 300px;
+	height: 150px;
+	position: relative;
+}
+
+.tarjeta{
+	width: 58px;
+	height: 90px;
+	background-color: #442222;
+	font-size: 40px;
+	position: absolute;
+	top: 35px;
+	left: 125px;
+	border-radius: 8px;
+	text-align: center;
+	cursor: pointer;
+	animation: carrusel 12s linear infinite;
+}
+
+@keyframes carrusel{
+	from{
+		transform: rotateY(360deg) translateZ(100px);
+		z-index: 10;
+		opacity: 10;
+	}
+	50%{
+		z-index: -10;
+	}
+	to{
+		transform: rotateX(0deg) translateZ(100px) rotateX(0deg);
+		z-index: 10;
+	}
+}
+
+#kathi7{
+	background-image: url(fotos/11.jpg);
+	background-size: cover;
+}
+
+#kathi7:hover{
+	box-shadow: 5px 5px 20px #51F225 ;
+}
+
+#kathi6{
+	background-image: url(fotos/10.jpg);
+	background-size: contain;
+	animation-delay: -1.5s;
+}
+
+#kathi6:hover{
+	box-shadow: 5px 5px 20px #F08E69  ;
+}
+
+#kathi5{
+	background-image: url(fotos/13.jpg);
+	background-size: cover;
+	animation-delay: -3s;
+}
+
+#kathi5:hover{
+	box-shadow: 5px 5px 20px #FEFE08 ;
+}
+
+#kathi4{
+	background-image: url(fotos/9.jpg);
+	background-size: cover;
+	animation-delay: -4.5s;
+}
+
+#kathi4:hover{
+	box-shadow: 5px 5px 20px #C8C8C8 ;
+}
+ 
+
+#kathi3{
+	background-image: url(fotos/12.jpg);
+	background-size: cover;
+	animation-delay: -6s;
+}
+
+#kathi3:hover{
+	box-shadow: 5px 5px 20px #00B4ED ;
+}
+
+#kathi2{
+	background-image: url(fotos/15.jpg);
+	background-size: contain;
+	animation-delay: -7.5s;
+}
+
+#kathi2:hover{
+	box-shadow: 5px 5px 20px #84044C   ;
+}
+
+
+#kathi1{
+	background-image: url(fotos/6.jpg);
+	background-size: cover;
+	animation-delay: -9s;
+}
+
+#kathi1:hover{
+	box-shadow: 5px 5px 20px #A66808  ;
+}
+
+
+#kathi{
+	background-image: url(fotos/16.jpg);
+	background-size: cover;
+	animation-delay: -10.5s;
+}
+
+#kathi:hover{
+	box-shadow: 5px 5px 20px #000000  ;
+}
+
+
+
+.tarjeta h3{
+	color: #00ffdc;
+	font-size: 7px;
+	margin-top: 76px;
+	background-color: #C91A2D45 ;
+}
+
+
+@media screen and (max-width: 480px){
+	p{
+		text-align: center;
+	}
+
+	.opcion_uno{
+		text-align: center;
+	}
+
+	.cubo, .opciones, footer{
+		width: auto;
+
+	}
+}
+
+#audio{
+	display: none;
+}
